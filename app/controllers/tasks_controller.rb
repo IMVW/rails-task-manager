@@ -20,7 +20,7 @@ class TasksController < ApplicationController
 
   # create a new task
   def create
-    @taks = Task.new(task_params)
+    @taks = Task.new()
     @task.save
     redirect_to task_path(@task)
   end
